@@ -1,0 +1,43 @@
+@import 'fonts'
+
+body
+    max-width: 1440px
+    margin: auto
+    box-sizing: border-box
+.container
+    max-width: 1140px
+    margin: auto  
+    display: flex
+    flex-direction: column 
+    justify-content: center
+.header
+    max-height: 800px
+    display: flex
+    flex-direction: column
+    background-color: #eff0f2
+    &__title
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin: auto
+        margin: 140px 0px
+    &__logo
+        max-width: 113px
+        max-height: 46px
+        margin: 50px 0px 
+    &__button
+        padding: 20px 48px
+        max-width: 234px
+.title
+    &__text
+        // margin: auto 
+        display: flex
+        justify-content: center
+        text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24)
+        font-size: 45px
+        font-weight: 700
+        line-height: 28px
+        text-transform: uppercase
+        letter-spacing: 2.7px
+        padding: 12px 0px
+        +Montserrat
