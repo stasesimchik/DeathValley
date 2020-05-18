@@ -7,18 +7,344 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Death Valley</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <img src="img/main-logo.png" alt="logo" class="header__logo">
-            <div class="header__title title">
-                <p class="title__text">Say Hello to SHOPNO!</p>
-                <p class="title__text">Agency CORPORATE SHOPNO Theme</p>
+            <div class="header__logo logo">
+                <img src="img/header-logo.png" alt="logo" class="logo__img">
             </div>
-            <button class="header__button">CONTACT US</button>
+            <div class="header__title title">
+                <span class="title__text">Say Hello to SHOPNO!</span>
+                <span class="title__text">Agency CORPORATE SHOPNO Theme</span>
+            </div>
+            <button class="header__button" data-toggle="modal" data-target="my-modal">CONTACT US</button>
+            <div class="header__img image">
+                <img src="img/header-glass.png" alt="juice glass" class="image__item">
+            </div>
         </div>
-    </header>    
+    </header> 
+     <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body popup-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="about">
+            <div class="container">
+                <div class="main__heading heading">
+                    <h2 class="heading__title">About us</h2>
+                    <span class="heading__subtitle">Lorem ipsum dolor sit amet event landing template</span>
+                </div>
+                <div class="about__content content">
+                    <div class="content__img">
+                        <img src="img/about-img.png" alt="computer" class="about__img">
+                    </div>
+                    <div class="content__text description">
+                         <h3 class="description__title">We Actually Do amazing works</h3>
+                         <p class="description__text">A visual approach is an approach to a runway at an airport 
+                            conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all times.
+                            Preceding aircraft in approach correct sight. conducted under instrument flight rules.</p>
+                         <h3 class="description__title">why we are the great?</h3>
+                         <p class="description__text">A visual approach is an approach to a runway at an airport 
+                            conducted under instrument flight rules.
+                            The preceding aircraft in approach correct sight.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="works">
+            <div class="container">
+                <div class="main__heading heading">
+                    <h2 class="heading__title">Featured works</h2>
+                    <span class="heading__subtitle">Lorem ipsum dolor sit amet event landing template</span>
+                </div>
+                <div class="works__gallery gallery">
+                    <img src="img/works1.png" alt="works1" class="gallery__img" data-toggle="modal" data-target="#exampleModal">
+                    <img src="img/works2.png" alt="works2" class="gallery__img" data-toggle="modal" data-target="#exampleModal">
+                    <img src="img/works3.png" alt="works3" class="gallery__img" data-toggle="modal" data-target="#exampleModal">
+                    <img src="img/works4.png" alt="works4" class="gallery__img" data-toggle="modal" data-target="#exampleModal">
+                    <img src="img/works5.png" alt="works5" class="gallery__img" data-toggle="modal" data-target="#exampleModal">
+                    <img src="img/works6.png" alt="works6" class="gallery__img" data-toggle="modal" data-target="#exampleModal">
+                </div>
+                <!-- /.works__gallery -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.works -->
+
+        <section class="team">
+            <div class="container">
+                <div class="main__heading heading">
+                    <h2 class="heading__title">Small Team</h2>
+                    <span class="heading__subtitle">Lorem ipsum dolor sit amet event landing template</span>
+                </div>
+                <div class="team__gallery gallery">
+                    <div class="gallery__block">
+                        <img src="img/team1.png" alt="team1" class="gallery__img">
+                        <div class="gallery__hidden hidden">
+                            <span class="hidden__name">AL RAYHAN </span>
+                            <!-- /.hidden__name -->
+                            <span class="hidden__direction">/ UI Designer</span> <!-- /.hidden__direction -->
+                            <p class="hidden__text">Lorem Ipsum is not simply is  an action designer random text
+                                It has roots in a piece. </p>
+                            <!-- /.hidden__text -->
+                            <div class="hidden__social icon">
+                                <a href="http://facebook.com" class="icon__links" target="_blank">
+                                    <img src="img/fb.png" alt="fb" class="icon__img" >
+                                </a>
+                                <a href="http://twitter.com" class="icon__links" target="_blank">
+                                    <img src="img/tw.png" alt="twitter" class="icon__img">
+                                </a>
+                                <a href="http://google.com" class="icon__links" target="_blank"> 
+                                    <img src="img/gl.png" alt="gl" class="icon__img">
+                                </a>
+                                <a href="http://gmail.com" class="icon__links" target="_blank">
+                                    <img src="img/mail.png" alt="mail" class="icon__img">
+                                </a>                      
+                            </div>
+                            <!-- /.hidden__social icon -->
+                        </div>
+                    </div>
+                    <div class="gallery__block">
+                        <img src="img/team2.png" alt="team2" class="gallery__img">
+                        <div class="gallery__hidden hidden">
+                            <span class="hidden__name">AL RAYHAN </span>
+                            <!-- /.hidden__name -->
+                            <span class="hidden__direction">/ UI Designer</span> <!-- /.hidden__direction -->
+                            <p class="hidden__text">Lorem Ipsum is not simply is  an action designer random text
+                                It has roots in a piece. </p>
+                            <!-- /.hidden__text -->
+                            <div class="hidden__social icon">
+                                <a href="http://facebook.com" class="icon__links" target="_blank">
+                                    <img src="img/fb.png" alt="fb" class="icon__img" >
+                                </a>
+                                <a href="http://twitter.com" class="icon__links" target="_blank">
+                                    <img src="img/tw.png" alt="twitter" class="icon__img">
+                                </a>
+                                <a href="http://google.com" class="icon__links" target="_blank"> 
+                                    <img src="img/gl.png" alt="gl" class="icon__img">
+                                </a>
+                                <a href="http://gmail.com" class="icon__links" target="_blank">
+                                    <img src="img/mail.png" alt="mail" class="icon__img">
+                                </a>                      
+                            </div>
+                            <!-- /.hidden__social icon -->
+                        </div>
+                    </div>
+                    <div class="gallery__block">
+                        <img src="img/team3.png" alt="team3" class="gallery__img">
+                        <div class="gallery__hidden hidden">
+                            <span class="hidden__name">AL RAYHAN </span>
+                            <!-- /.hidden__name -->
+                            <span class="hidden__direction">/ UI Designer</span> <!-- /.hidden__direction -->
+                            <p class="hidden__text">Lorem Ipsum is not simply is  an action designer random text
+                                It has roots in a piece. </p>
+                            <!-- /.hidden__text -->
+                            <div class="hidden__social icon">
+                                <a href="http://facebook.com" class="icon__links" target="_blank">
+                                    <img src="img/fb.png" alt="fb" class="icon__img" >
+                                </a>
+                                <a href="http://twitter.com" class="icon__links" target="_blank">
+                                    <img src="img/tw.png" alt="twitter" class="icon__img">
+                                </a>
+                                <a href="http://google.com" class="icon__links" target="_blank"> 
+                                    <img src="img/gl.png" alt="gl" class="icon__img">
+                                </a>
+                                <a href="http://gmail.com" class="icon__links" target="_blank">
+                                    <img src="img/mail.png" alt="mail" class="icon__img">
+                                </a>                      
+                            </div>
+                            <!-- /.hidden__social icon -->
+                        </div>
+                    </div>
+                    <div class="gallery__block">
+                        <img src="img/team4.png" alt="team4" class="gallery__img">
+                        <div class="gallery__hidden hidden">
+                            <span class="hidden__name">AL RAYHAN </span>
+                            <!-- /.hidden__name -->
+                            <span class="hidden__direction">/ UI Designer</span> <!-- /.hidden__direction -->
+                            <p class="hidden__text">Lorem Ipsum is not simply is  an action designer random text
+                                It has roots in a piece. </p>
+                            <!-- /.hidden__text -->
+                            <div class="hidden__social icon">
+                                <a href="http://facebook.com" class="icon__links" target="_blank">
+                                    <img src="img/fb.png" alt="fb" class="icon__img" >
+                                </a>
+                                <a href="http://twitter.com" class="icon__links" target="_blank">
+                                    <img src="img/tw.png" alt="twitter" class="icon__img">
+                                </a>
+                                <a href="http://google.com" class="icon__links" target="_blank"> 
+                                    <img src="img/gl.png" alt="gl" class="icon__img">
+                                </a>
+                                <a href="http://gmail.com" class="icon__links" target="_blank">
+                                    <img src="img/mail.png" alt="mail" class="icon__img">
+                                </a>                      
+                            </div>
+                            <!-- /.hidden__social icon -->
+                        </div>
+                    </div>
+                    <div class="gallery__block">
+                        <img src="img/team5.png" alt="team5" class="gallery__img">
+                        <div class="gallery__hidden hidden">
+                            <span class="hidden__name">AL RAYHAN </span>
+                            <!-- /.hidden__name -->
+                            <span class="hidden__direction">/ UI Designer</span> <!-- /.hidden__direction -->
+                            <p class="hidden__text">Lorem Ipsum is not simply is  an action designer random text
+                                It has roots in a piece. </p>
+                            <!-- /.hidden__text -->
+                            <div class="hidden__social icon">
+                                <a href="http://facebook.com" class="icon__links" target="_blank">
+                                    <img src="img/fb.png" alt="fb" class="icon__img" >
+                                </a>
+                                <a href="http://twitter.com" class="icon__links" target="_blank">
+                                    <img src="img/tw.png" alt="twitter" class="icon__img">
+                                </a>
+                                <a href="http://google.com" class="icon__links" target="_blank"> 
+                                    <img src="img/gl.png" alt="gl" class="icon__img">
+                                </a>
+                                <a href="http://gmail.com" class="icon__links" target="_blank">
+                                    <img src="img/mail.png" alt="mail" class="icon__img">
+                                </a>                      
+                            </div>
+                            <!-- /.hidden__social icon -->
+                        </div>
+                    </div>
+                    <div class="gallery__block">
+                        <img src="img/team1.png" alt="team1" class="gallery__img">
+                        <div class="gallery__hidden hidden">
+                            <span class="hidden__name">AL RAYHAN </span>
+                            <!-- /.hidden__name -->
+                            <span class="hidden__direction">/ UI Designer</span> <!-- /.hidden__direction -->
+                            <p class="hidden__text">Lorem Ipsum is not simply is  an action designer random text
+                                It has roots in a piece. </p>
+                            <!-- /.hidden__text -->
+                            <div class="hidden__social icon">
+                                <a href="http://facebook.com" class="icon__links" target="_blank">
+                                    <img src="img/fb.png" alt="fb" class="icon__img" >
+                                </a>
+                                <a href="http://twitter.com" class="icon__links" target="_blank">
+                                    <img src="img/tw.png" alt="twitter" class="icon__img">
+                                </a>
+                                <a href="http://google.com" class="icon__links" target="_blank"> 
+                                    <img src="img/gl.png" alt="gl" class="icon__img">
+                                </a>
+                                <a href="http://gmail.com" class="icon__links" target="_blank">
+                                    <img src="img/mail.png" alt="mail" class="icon__img">
+                                </a>                      
+                            </div>
+                            <!-- /.hidden__social icon -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /.team__gallery -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.team -->
+        
+        <section>
+            <div class="contacts">
+                <div class="container">
+                    <div class="contacts__container">
+                        <div class="contacts__content">
+                            <div class="contacts__form">
+                                <form action="" class="form">
+                                    <span class="form__title">Name*</span>
+                                    <input type="text" name="form__input" class="form__input" placeholder="Name">
+                                    <span class="form__title">Subject*</span>
+                                    <input type="text" name="form__input" class="form__input" placeholder="Subject">
+                                    <span class="form__title">Email</span>
+                                    <input type="email" name="form__input" class="form__input" placeholder="email">
+                                    <span class="form__title">Message</span>
+                                    <textarea name="form__area" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                                    <button type="submit" class="form__btn">Send Message</button>
+                                </form>
+                            </div>
+                            <div class="contacts__address address">
+                                <span class="address__text"><a href="" class="address__links">Address line 1</a></span>
+                                <span class="address__text"><a href="" class="address__links">Address line 2</a></span>
+                                <a href="tel:+548 945645" class="address__phone">Phone +548 945645</a>
+                                <a href="tel:+456456 54546" class="address__phone">Fax +456456 54546</a>
+                                <div class="address__mailblock">
+                                    <a href="http://www.designagency.net" class="address__site" target="_blank">Web www.designagency.net</a>
+                                    <a href="mailto:info@designagency.net" class="address__mail">Email: info@designagency.net</a>
+                                </div>
+                                <div class="address__map" id="map"></div>
+                                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75225.01566777422!2d27.4890752!3d53.9000832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf84a9511139%3A0x3be3534f5f48775e!2z0JrQvtC80LDRgNC-0LLRgdC60LjQuSDRgNGL0L3QvtC6!5e0!3m2!1sru!2sby!4v1589734575817!5m2!1sru!2sby" width="455" height="224" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+                            </div>
+                            <!-- /.contacts__address address -->
+                        </div>
+                        <!-- /.contacts__content -->
+                    </div>
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.contacts -->
+        </section>
+        <footer class="footer">
+            <span class="footer__title">Follow Us</span>
+            <div class="footer__icon social">
+                <div class="social__icon">                
+                    <a href="#" class="icon__links">
+                        <img src="img/pinterest.png" alt="" class="social__img">
+                    </a>
+                </div>
+                <div class="social__icon">                
+                    <a href="#" class="icon__links">
+                        <img src="img/twitter.png" alt="" class="social__img">
+                    </a>
+                </div>
+                    
+                <div class="social__icon">                
+                    <a href="#" class="icon__links">
+                        <img src="img/facebook.png" alt="" class="social__img">
+                    </a>
+                </div>
+                <div class="social__icon">                
+                    <a href="#" class="icon__links">
+                        <img src="img/google.png" alt="" class="social__img">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    let gallerry = document.querySelectorAll('.gallery__img');
+
+    for(let i = 0; i <gallerry.length; i++){
+        gallerry[i].onclick = function(){
+            let code = this.outerHTML;
+            let popup = document.querySelector('.popup-body');
+            popup.innerHTML = code;
+        }
+    }
+</script>
+<script>
+    function initMap(){
+        let opt = {
+            center: {lat: 53.943392, lng: 27.710670},
+            zoom: 10
+        }
+
+        let map = new google.maps.Map(document.getElementById("map"), opt);
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbSNfS-mPH7fFQ_JQc9YLs-bpIdRzajKc&callback=initMap"
+    async defer></script>
 </body>
 </html>

@@ -1,4 +1,6 @@
 @import 'fonts'
+@import 'about'
+
 
 body
     max-width: 1440px
@@ -10,34 +12,227 @@ body
     display: flex
     flex-direction: column 
     justify-content: center
+.heading
+    padding-top: 100px
+    &__title
+        text-align: center
+        opacity: 0.9
+        color: #000000
+        +Montserrat
+        font-size: 38px
+        font-weight: 700
+        text-transform: uppercase
+    &__subtitle
+        display: block
+        text-align: center
+        opacity: 0.62
+        color: #000000
+        +Merriweather
+        font-size: 18px
+        font-weight: 400
+        text-transform: uppercase
 .header
-    max-height: 800px
     display: flex
     flex-direction: column
     background-color: #eff0f2
     &__title
+        margin: 140px 0px
         display: flex
         flex-direction: column
-        justify-content: center
-        margin: auto
-        margin: 140px 0px
     &__logo
-        max-width: 113px
-        max-height: 46px
-        margin: 50px 0px 
+        display: flex 
+        justify-content: flex-start
+        padding: 50px 0px
+    &__img 
+        display: flex 
+        justify-content: flex-end
     &__button
         padding: 20px 48px
         max-width: 234px
+        margin: 0 auto
+        background-color: #eff0f2
+        border: 1px solid black
+        &:hover
+            background-color: orange
+            color: #fff 
+            border: 1px solid #fff
+            transition: 1s
+.image
+    &__item
+        max-width: 121px
+        max-height: 156px               
+.logo
+    &__img       
+        max-width: 113px
+        max-height: 46px
 .title
     &__text
-        // margin: auto 
-        display: flex
-        justify-content: center
+        display: block
+        text-align: center
         text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24)
         font-size: 45px
         font-weight: 700
-        line-height: 28px
         text-transform: uppercase
         letter-spacing: 2.7px
         padding: 12px 0px
         +Montserrat
+.gallery
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 110px 0px
+    &__block
+        flex-basis: 33%
+        padding-bottom: 5px
+        position: relative
+        &:hover .hidden
+            transform: scale(1)
+            transition: 0.5s
+.hidden
+    background-color: #70f6eb
+    padding: 15px
+    width: 90%
+    margin: auto
+    position: absolute
+    bottom: 50px
+    left: 18px
+    transform: scale(0)
+    &__name
+        color: #272727
+        +Merriweather
+        font-size: 20px
+        font-weight: 700
+        letter-spacing: 1px
+    &__direction
+        +Merriweather
+        color: #749894
+        font-style: italic
+        font-weight: 400
+        letter-spacing: 0.45px
+    &__text
+        opacity: 0.8
+        color: #000000
+        +Raleway
+        font-size: 16px
+        font-weight: 400
+        line-height: 24px
+        letter-spacing: 0.16px 
+        margin: 16px 0px 
+.icon__links:hover
+    text-decoration: none                  
+.team
+    background-color: #f9fbfb 
+.form
+    display: flex
+    flex-direction: column
+    box-shadow: 0 0 30px rgba(21, 21, 21, 0.12)
+    background-color: #021623
+    opacity: 0.71  
+    padding: 47px 35px
+    &__title
+        opacity: 0.6
+        color: #ffffff
+        +Raleway
+        font-size: 15px
+        font-weight: 400
+        line-height: 51px
+    &__btn 
+        width: 244px
+        height: 53px
+        border: none
+        border-radius: 2px
+        background-color: #6eeee4
+        color: #000000
+        +Montserrat
+        font-size: 18px
+        font-weight: 400
+        line-height: 28px
+        text-transform: uppercase
+input,textarea
+    box-shadow: 0 0 30px rgba(21, 21, 21, 0.12)
+    background-color: #021623
+    opacity: 0.71 
+    color: #fff
+    margin-bottom: 25px
+    border: none
+    border-bottom: 1px solid #ffffff
+.contacts
+    background-image: url(../img/snow-img.png)
+    &__container
+        padding: 120px 0px
+    &__content
+        display: flex
+        justify-content: space-between
+    &__form
+        flex-basis: 50%    
+.address
+    flex-basis: 45%
+    box-shadow: 0 0 30px rgba(21, 21, 21, 0.12)
+    background-color: #021623
+    opacity: 0.71 
+    padding: 47px 35px
+    & a,span
+        color: #fff
+        font-family: Raleway
+        font-size: 15px
+        font-weight: 400
+        line-height: 24px
+        opacity: 0.7
+        display: block
+        text-decoration: none 
+    &__mailblock
+        margin-top: 35px
+        margin-bottom: 25px
+.popup-body
+    margin: auto
+.address__map
+    width: 100%
+    height: 300px
+.footer
+    background-color: #262b2e
+    padding: 88px 0px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &__title
+        display: block
+        opacity: 0.8
+        color: #ffffff
+        +Raleway
+        font-size: 16px
+        font-weight: 400
+        line-height: 25px
+        text-transform: uppercase
+        letter-spacing: 0.16px
+        margin: auto
+    &__icon
+        display: flex 
+        margin: auto   
+.social__icon
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 46px
+    height: 40px
+    background-color: #3e4244
+    margin: 5px
+    &:hover
+        background-color: orange
+
+@media (max-width: 1200px)
+    .container
+        padding: 0px 20px    
+    .gallery
+        justify-content: center
+@media (max-width: 900px)
+    .content
+        flex-direction: column
+        justify-content: center
+        &__img
+            margin: auto
+    .contacts__content
+        flex-direction: column
+        justify-content: center
+    .about__img
+        width: 300px    
+   
